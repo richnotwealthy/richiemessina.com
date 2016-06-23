@@ -1,0 +1,27 @@
+{
+  "name": "richiemessina.com",
+  "version": "0.0.0",
+  "description": "my portfolio site",
+  "scripts": {
+    "start": "gulp"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^4.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "richie",
+    "messina",
+    "richard",
+    "richiemessina",
+    "richardmessina",
+    "rivyx"
+  ],
+  "private": true,
+  "author": "richie messina",
+  "license": "ISC"
+}

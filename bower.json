@@ -1,0 +1,30 @@
+{
+  "name": "richiemessina.com",
+  "description": "my portfolio site",
+  "main": "index.html",
+  "keywords": [
+    "richie",
+    "messina",
+    "richard",
+    "richiemessina",
+    "richardmessina",
+    "rivyx"
+  ],
+  "authors": [
+    "richie messina"
+  ],
+  "license": "MIT",
+  "homepage": "richiemessina.com/index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Materialize": "materialize#^0.97.6",
+    "jquery": "2.2.4"
+  }
+}
