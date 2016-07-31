@@ -7,11 +7,22 @@
     "start": "gulp"
   },
   "dependencies": {
-    "express": "^4.14.0"
+    "dustjs-linkedin": "^2.7.3",
+    "express": "^4.14.0",
+    "q": "^1.4.1"
   },
   "devDependencies": {
+    "browserify": "^13.1.0",
+    "del": "^2.2.1",
+    "globby": "^6.0.0",
     "gulp": "^3.9.1",
-    "gulp-nodemon": "^2.1.0"
+    "gulp-dust": "^3.0.0",
+    "gulp-nodemon": "^2.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "uglify-js": "^2.7.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
   },
   "keywords": [
     "richie",

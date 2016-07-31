@@ -1,0 +1,10 @@
+@import 'fontface';
+@include fontFace('Raleway', '../fonts/Raleway-Regular', normal, normal);
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: white;
+    color: #676a6c;
+    -webkit-transition: width 0.5s, height 0.5s, background-color 2s, margin-left 1s, -webkit-transform 1s, visibility 1s, opacity 1s;
+    transition: all 1s;
+}
