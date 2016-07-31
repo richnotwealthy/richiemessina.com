@@ -1,11 +1,26 @@
 const gulp = require('gulp');
-const connect = require('gulp-connect');
+const nodemon = require('gulp-nodemon');
 
-gulp.task('webserver', function() {
-    connect.server({
-        port: 5555,
-        debug: true
+gulp.task('develop', function() {
+    nodemon({
+        script: 'server.js',
+        ext: 'js html',
+        env: { 'NODE_ENV': 'development' }
+    }).on('readable', function() {
+        this.stdout.pipe(process.stdout);
+        this.stderr.pipe(process.stderr);
     });
 });
 
-gulp.task('default', ['webserver']);
+gulp.task('prod', function() {
+    nodemon({
+        script: 'server.js',
+        ext: 'js html',
+        env: { 'NODE_ENV': 'production' }
+    }).on('readable', function() {
+        this.stdout.pipe(process.stdout);
+        this.stderr.pipe(process.stderr);
+    });
+});
+
+gulp.task('default', ['develop']);
