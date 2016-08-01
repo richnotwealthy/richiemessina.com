@@ -10,13 +10,13 @@ var projectsConfig = require('../config/projects.js');
 
 function loadAbout(){
     aboutTempl(aboutConfig).then(function(about){
-       $('#main-box').append($(about));
+       $('#main-view').append($(about));
     });
 }
 
 function loadProjects(){
     projectsTempl(projectsConfig).then(function(projects){
-        $('#main-box').append($(projects));
+        $('#main-view').append($(projects));
     });
 }
 
@@ -37,11 +37,20 @@ $(document).ready(function(){
     $('.button-collapse').sideNav();
     particlesJS.load('particles-js', 'config/particles.json');
 
+    $(window).scroll(function(){
+        var pos = $('nav').offset().top
+        if(pos > 30){
+            $('nav').removeClass('transparent').addClass('particle-red');
+        } else{
+            $('nav').addClass('transparent').removeClass('particle-red');
+        }
+    })
+
     // load default page
     loadAbout();
 
     $('nav ul a').click(function(){
-        $('#main-box').empty();
+        $('#main-view').empty();
         views[$(this).html()]();
     });
 });
