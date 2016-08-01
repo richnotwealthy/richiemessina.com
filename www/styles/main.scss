@@ -1,10 +1,50 @@
 @import 'fontface';
 @include fontFace('Raleway', '../fonts/Raleway-Regular', normal, normal);
 
+$lightGray: #676a6c;
+$particleRed: #e19494;
+$white: #fff;
+
 body {
     font-family: 'Raleway', sans-serif;
-    background-color: white;
-    color: #676a6c;
-    -webkit-transition: width 0.5s, height 0.5s, background-color 2s, margin-left 1s, -webkit-transform 1s, visibility 1s, opacity 1s;
-    transition: all 1s;
+    background-color: $white;
+    color: $lightGray;
+}
+
+section {
+    margin: 0 0;
+    padding: 0 0;
+    position: relative;
+}
+
+nav {
+    box-shadow: none;
+}
+
+nav ul a,
+nav a,
+#logo-container {
+    padding: 0 15px;
+    background-color: $particleRed;
+    color: $white;
+}
+
+nav ul li:hover,
+nav a:hover,
+#logo-container:hover {
+    background-color: #e6e6e6;
+    color: $lightGray;
+}
+
+nav ul a:hover {
+    background-color: transparent;
+}
+
+#particles-js {
+    height: 100% !important;
+    width: 100% !important;
+    position: fixed !important;
+    top: 0px !important;
+    left: 0px !important;
+    z-index: 0 !important;
 }

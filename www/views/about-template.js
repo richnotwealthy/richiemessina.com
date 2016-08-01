@@ -1,0 +1,4 @@
+module.exports=function(dust){var tmpl=(function(dust){dust.register("about-template",body_0);function body_0(chk,ctx){return chk.w("<div class=\"container center\"><div class=\"container\"><h3>").f(ctx.get(["title"], false),ctx,"h").w("</h1><p class=\"flow-text\">").f(ctx.get(["body"], false),ctx,"h").w("</p><p class=\"flow-text\">").f(ctx.get(["body"], false),ctx,"h").w("</p><p class=\"flow-text\">").f(ctx.get(["body"], false),ctx,"h").w("</p><p class=\"flow-text\">").f(ctx.get(["body"], false),ctx,"h").w("</p></div></div>");}body_0.__dustBody=!0;return body_0}(dust));var f=function load(ctx, cb) {
+      var fn = cb ? 'render' : 'stream';
+      return dust[fn](tmpl, ctx, cb);
+    };f.template=tmpl;return f}

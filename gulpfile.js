@@ -62,8 +62,9 @@ gulp.task('develop', ['scripts', 'styles'], function(){
         this.stderr.pipe(process.stderr);
     });
 
-    gulp.watch('./www/templates/**/*.html', ['templgen']);
+    gulp.watch('./www/templates/**/*.html', ['templgen', 'scripts']);
     gulp.watch('./www/scripts/**/*.js', ['scripts']);
+    gulp.watch('./www/config/**/*.js', ['scripts']);
     gulp.watch('./www/styles/**/*.scss', ['styles']);
 });
 
