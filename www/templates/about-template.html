@@ -8,4 +8,20 @@
             <img class="responsive-img circle" src={me}>
         </div>
     </div>
+    <div class="row">
+        {#infos}
+        <div class="col s4">
+            <div class="card-panel">
+                <div class="center"><i class="material-icons large">{icon}</i></div>
+                <h5>{label}</h5>
+                <p>{text}</p>
+            </div>
+        </div>
+        {/infos}
+    </div>
+</div>
+<div class="particle-red">
+    <div class="container">
+        <p class="flow-text">{body}</p>
+    </div>
 </div>

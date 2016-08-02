@@ -33,11 +33,13 @@ nav a,
     color: $white;
 }
 
-nav ul li:hover,
-nav a:hover,
-#logo-container:hover {
-    background-color: #e6e6e6;
-    color: $lightGray;
+nav ul li,
+nav a,
+#logo-container {
+    &:hover {
+        background-color: #e6e6e6;
+        color: $lightGray;
+    }
 }
 
 nav ul a:hover {
@@ -45,7 +47,8 @@ nav ul a:hover {
 }
 
 .particle-red {
-    background-color: $particleRed !important;
+    background-color: $particleRed;
+    color: $white;
 }
 
 #particles-js {

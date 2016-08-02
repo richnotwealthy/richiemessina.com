@@ -46,7 +46,7 @@
       }
     },
     "line_linked": {
-      "enable": false,
+      "enable": true,
       "distance": 150,
       "color": "#dcc2c2",
       "opacity": 0.4,
@@ -55,7 +55,7 @@
     "move": {
       "enable": true,
       "speed": 0.8,
-      "direction": "top",
+      "direction": "random",
       "random": true,
       "straight": false,
       "out_mode": "out",

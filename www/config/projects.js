@@ -29,7 +29,9 @@ module.exports =
                     link: "https://github.com/rivyx/prepdroid"
                 }
             ],
-            description: "My first application, made to be used by students at St. Peter's Prep, Jersey City, NJ.\nI made this when I first got interested in programming. It was my very first personal project. I actually built the entire thing during finals week of my junior year in high school, 2014."
+            description: "My first application, made to be used by students at St. Peter's Prep, Jersey City, NJ.\nI made this when\
+             I first got interested in programming. It was my very first personal project. I actually built the entire thing during \
+             finals week of my junior year in high school, 2014."
         }
     ]
 };

@@ -38,10 +38,9 @@ $(document).ready(function(){
     particlesJS.load('particles-js', 'config/particles.json');
 
     $(window).scroll(function(){
-        var pos = $('nav').offset().top
-        if(pos > 30){
+        if($(this).scrollTop() > 30){
             $('nav').removeClass('transparent').addClass('particle-red');
-        } else{
+        } else {
             $('nav').addClass('transparent').removeClass('particle-red');
         }
     })
