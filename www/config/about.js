@@ -27,5 +27,27 @@ module.exports =
            Engineering at New York University. Deeply passionate about modern software, I simply love\
            developing programs and applications with expansive utility and attractive architecture."
        }
+   ],
+   quals: [
+       {
+           header: "Languages",
+           items: [
+               {
+                   img: "class",
+                   name: "JavaScript",
+                   grade: [,,,,]
+               }
+           ]
+       },
+       {
+           header: "Technologies",
+           items: [
+               {
+                   img: "class",
+                   name: "Dust.js",
+                   grade: [,,,]
+               }
+           ]
+       }
    ]
 }

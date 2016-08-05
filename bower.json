@@ -25,6 +25,7 @@
   ],
   "dependencies": {
     "Materialize": "materialize#^0.97.6",
-    "jquery": "2.2.4"
+    "jquery": "2.2.4",
+    "particles.js": "^2.0.0"
   }
 }

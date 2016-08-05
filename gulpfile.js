@@ -4,7 +4,7 @@ const del = require('del');
 const dust = require('gulp-dust');
 const sass = require('gulp-sass');
 const browserify = require('browserify');
-const uglify = require('uglify-js');
+const uglify = require('gulp-uglify');
 const buffer = require('vinyl-buffer');
 const source = require('vinyl-source-stream');
 const through = require('through2');
@@ -18,8 +18,7 @@ gulp.task('scripts', function (){
     bundledStream
     .pipe(source('bundle.js'))
     .pipe(buffer())
-    .pipe(sourcemaps.init({ loadMaps: true }))
-    .pipe(sourcemaps.write('./'))
+    .pipe(uglify())
     .pipe(gulp.dest('./.tmp/scripts'));
 
     globby(['./www/scripts/**/*.js']).then(function(entries){

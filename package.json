@@ -9,6 +9,7 @@
   "dependencies": {
     "dustjs-linkedin": "^2.7.3",
     "express": "^4.14.0",
+    "morgan": "^1.7.0",
     "q": "^1.4.1"
   },
   "devDependencies": {
@@ -20,7 +21,7 @@
     "gulp-nodemon": "^2.1.0",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0",
-    "uglify-js": "^2.7.0",
+    "gulp-uglify": "^2.0.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   },
