@@ -4,7 +4,7 @@
   "description": "my portfolio site",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp"
+    "start": "gulp prod"
   },
   "dependencies": {
     "dustjs-linkedin": "^2.7.3",

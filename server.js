@@ -18,7 +18,7 @@ if(app.get('env') === 'development'){
     app.set('port', 3333);
 } else {
     app.use(express.static(path.join(__dirname, 'dist')));
-    app.set('port', 4444);
+    app.set('port', 8080);
 }
 
 app.use('/', router);
