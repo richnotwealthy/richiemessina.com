@@ -11,10 +11,12 @@
     <div class="row">
         {#infos}
         <div class="col s12 m4">
-            <div class="card-panel">
-                <div class="center"><i class="material-icons large">{icon}</i></div>
-                <h5>{label}</h5>
-                <p>{text}</p>
+            <div class="card medium-small">
+                <div class="card-content">
+                    <div class="center"><i class="material-icons large particle-red-text">{icon}</i></div>
+                    <h5>{label}</h5>
+                    <p>{text}</p>
+                </div>
             </div>
         </div>
         {/infos}
@@ -27,7 +29,12 @@
         {#jobs}
         <div class="col s12">
             <ul class="card-panel collection with-header">
-                <li class="collection-header no-padding"><h5>{title}</h5></li>
+                <li class="collection-header no-padding">
+                    <div class="row valign-wrapper">
+                        <img class="col s1" src={img}>
+                        <h5 class="col s11 valign">{title}</h5>
+                    </div>
+                </li>
                 <li class="collection-item no-padding"><p>{text}</p></li>
             </ul>
         </div>
@@ -40,13 +47,13 @@
     <div class="row">
         {#quals}
         <div class="col s12 m6">
-            <ul class="card-panel collection with-header no-padding">
+            <ul class="card collection with-header">
                 <li class="collection-header"><h5>{header}</h5></li>
                 {#items}
                 <li class="collection-item avatar">
                     <img class="circle" src={img}>
                     <p class="title">{name}</p>
-                    <i class="material-icons">{#grade}grade{/grade}</i>
+                    <i class="material-icons particle-red-text">{#grade}grade{/grade}</i>
                 </li>
                 {/items}
             </ul>

@@ -1,23 +1,32 @@
+function calculateAge(birthday) { // birthday is a date
+    var ageDifMs = Date.now() - birthday.getTime();
+    var ageDate = new Date(ageDifMs); // miliseconds from epoch
+    var ans = Math.abs(ageDate.getUTCFullYear() - 1970);
+    return ans;
+}
+
 module.exports =
 {
-   title: 'About Me',
+   title: 'About',
    me: '../images/me.png',
    body: "Deeply passionate about modern software, I simply love\
-   developing programs and applications with expansive utility and attractive architecture.",
+   developing programs and applications with expansive utility and attractive architecture.\
+   I am constantly building out personal projects and am always excited to pick up new work.",
    infos: [
        {
            icon: 'code',
            label: 'Developer',
-           text: "I am currently an undergraduate student pursuing my BS in Computer Science & \
-           Engineering at New York University. Deeply passionate about modern software, I simply love\
-           developing programs and applications with expansive utility and attractive architecture."
+           text: "Deeply passionate about modern software, I simply love\
+           developing programs and applications with expansive utility and attractive architecture.\
+           I am constantly building out personal projects and am always excited to pick up new work."
        },
        {
            icon: 'class',
            label: 'Student',
-           text: "I am currently an undergraduate student pursuing my BS in Computer Science & \
-           Engineering at New York University. Deeply passionate about modern software, I simply love\
-           developing programs and applications with expansive utility and attractive architecture."
+           text: "I am currently an undergraduate student pursuing my BS in Computer Science &\
+           Engineering at New York University. I consider myself not only a student in the classroom\
+           but also in practice. For me, the most essential component of programming is the readiness\
+           and ability to learn and adapt to new technologies and outside perspectives."
        },
        {
            icon: 'lightbulb_outline',
@@ -30,21 +39,24 @@ module.exports =
    jobs: [
        {
            title: "Techonology Development Intern",
+           img: "../images/sito-o.png",
            text: "I am currently an undergraduate student pursuing my BS in Computer Science & \
            Engineering at New York University. Deeply passionate about modern software, I simply love\
-           developing programs and applications with expansive utility and attractive architecture"
+           developing programs and applications with expansive utility and attractive architecture."
        },
        {
            title: "Media Support Technician",
+           img: "../images/nyu-torch.png",
            text: "I am currently an undergraduate student pursuing my BS in Computer Science & \
            Engineering at New York University. Deeply passionate about modern software, I simply love\
-           developing programs and applications with expansive utility and attractive architecture"
+           developing programs and applications with expansive utility and attractive architecture."
        },
        {
            title: "Inventory Management Associate",
+           img: "../images/spprep-p.png",
            text: "I am currently an undergraduate student pursuing my BS in Computer Science & \
            Engineering at New York University. Deeply passionate about modern software, I simply love\
-           developing programs and applications with expansive utility and attractive architecture"
+           developing programs and applications with expansive utility and attractive architecture."
        }
    ],
    quals: [
@@ -188,7 +200,7 @@ module.exports =
            dates: "2011 - 2015",
            text: "In high school, I served as President of the Prep Against Ignorance Club, Secretary of the\
            National Spanish Honor Society, member of the National Honor Society, and a member of the Computer Club.\
-           I graduated with Distinguished Honors (GPA of 4.4 on a 4.5 scale, unweighted), was the ecipient of\
+           I graduated with Distinguished Honors (GPA of 4.4 on a 4.5 scale, unweighted), was the recipient of\
            4 Academic Achievement awards granted annually, and acted as both a Sheehan Scholar (full merit\
            scholarship program) and an Ignatian Scholar.",
            img: "../images/spprep.png"
