@@ -55,16 +55,24 @@ nav ul a:hover {
     color: $particleRed;
 }
 
-.card.medium-small {
-    height: 350px;
-}
-
 .gray-text {
     color: $lightGray;
 }
 
 .some-padding {
     padding: 20px 0;
+}
+
+.flex-box {
+    display: flex;
+}
+
+.flex {
+    flex: 1;
+}
+
+.fill-height {
+    height: 94%;
 }
 
 #particles-js {

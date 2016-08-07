@@ -1,6 +1,6 @@
 var Q = require('q');
 var dust = require('dustjs-linkedin');
-dust.config.cache = false;
+dust.config.cache = false
 
 var aboutTempl = Q.denodeify(require('../views/about-template.js')(dust));
 var aboutConfig = require('../config/about.js');
@@ -35,7 +35,7 @@ var views = {
 
 $(document).ready(function(){
     $('.button-collapse').sideNav();
-    particlesJS.load('particles-js', 'config/particles.json');
+    particlesJS.load('particles-js', 'statics/particles.json');
 
     $(window).scroll(function(){
         if($(this).scrollTop() > 30){

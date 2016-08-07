@@ -10,6 +10,7 @@ const source = require('vinyl-source-stream');
 const through = require('through2');
 const sourcemaps = require('gulp-sourcemaps');
 const globby = require('globby');
+const useref = require('gulp-useref');
 
 // glob, browserify, uglify
 gulp.task('scripts', function (){
@@ -67,17 +68,24 @@ gulp.task('develop', ['scripts', 'styles'], function(){
     gulp.watch('./www/styles/**/*.scss', ['styles']);
 });
 
-gulp.task('bld', function(){
-    gulp.src('./www/fonts/**/*').pipe(gulp.dest('./dist/font'));
-    gulp.src('./www/images/**/*').pipe(gulp.dest('./dist/img'));
-    gulp.src('./.tmp/styles/**/*.css').pipe(gulp.dest('./dist/css'));
-    gulp.src('./.tmp/scripts/**/*.js').pipe(gulp.dest('./dist/js'));
-    return gulp.src('./www/*.html')
-    .pipe(gulp.dest('./dist'));
+gulp.task('bld', ['scripts', 'styles'], function(){
+    gulp.src('./www/fonts/**/*').pipe(gulp.dest('./dist/fonts'));
+    gulp.src('./www/images/**/*').pipe(gulp.dest('./dist/images'));
+    gulp.src('./statics/**/*').pipe(gulp.dest('./dist/statics'));
+
+    gulp.src('www/index.html')
+    .pipe(useref({
+        searchPath: ['.','.tmp'],
+        transformPath: function(filePath) {
+            console.log(filePath);
+            return filePath;
+        }
+    }))
+    .pipe(gulp.dest('dist'));
 });
 
 // builds dist
-gulp.task('prod', ['scripts', 'styles', 'bld'], function(){
+gulp.task('prod', ['bld'], function(){
     nodemon({
         script: 'server.js',
         ext: 'js html',

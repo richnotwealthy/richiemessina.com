@@ -8,10 +8,10 @@
             <img class="responsive-img circle" src={me}>
         </div>
     </div>
-    <div class="row">
+    <div class="row flex-box">
         {#infos}
-        <div class="col s12 m4">
-            <div class="card medium-small">
+        <div class="col s12 m4 flex">
+            <div class="card fill-height">
                 <div class="card-content">
                     <div class="center"><i class="material-icons large particle-red-text">{icon}</i></div>
                     <h5>{label}</h5>
@@ -35,7 +35,11 @@
                         <h5 class="col s11 valign">{title}</h5>
                     </div>
                 </li>
-                <li class="collection-item no-padding"><p>{text}</p></li>
+                {#bullets}
+                <li class="collection-item no-padding">
+                    <p>{.}</p>
+                </li>
+                {/bullets}
             </ul>
         </div>
         {/jobs}
