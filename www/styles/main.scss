@@ -55,8 +55,12 @@ nav ul a:hover {
     color: $lightGray;
 }
 
-.no-padding {
-    padding: 0;
+.some-padding {
+    padding: 20px 0;
+}
+
+.margin-top {
+    margin-top: 20px;
 }
 
 #particles-js {
