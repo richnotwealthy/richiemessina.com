@@ -33,17 +33,17 @@ nav a,
     color: $white;
 }
 
-nav ul li,
-nav a,
-#logo-container {
-    &:hover {
-        background-color: #e6e6e6;
-        color: $lightGray;
-    }
+nav ul a:hover {
+    background-color: $particleRed;
 }
 
-nav ul a:hover {
-    background-color: transparent;
+.waves-effect {
+    display: block;
+}
+
+.side-nav a {
+    color: $white;
+    font-size: 1.5rem;
 }
 
 .particle-red {

@@ -1,10 +1,9 @@
 {
   "name": "richiemessina.com",
-  "version": "0.0.0",
   "description": "my portfolio site",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp prod"
+    "start": "node server.js",
+    "deploy": "gulp clean && gulp bld && gcloud app deploy --project portfolio-site-1470603805071"
   },
   "dependencies": {
     "dustjs-linkedin": "^2.7.3",
@@ -13,6 +12,7 @@
     "q": "^1.4.1"
   },
   "devDependencies": {
+    "bower": "^1.7.9",
     "browserify": "^13.1.0",
     "del": "^2.2.1",
     "globby": "^6.0.0",
@@ -36,5 +36,8 @@
   ],
   "private": true,
   "author": "richie messina",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "node": "~4.2"
+  }
 }

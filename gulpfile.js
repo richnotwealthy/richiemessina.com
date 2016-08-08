@@ -72,6 +72,7 @@ gulp.task('bld', ['scripts', 'styles'], function(){
     gulp.src('./www/fonts/**/*').pipe(gulp.dest('./dist/fonts'));
     gulp.src('./www/images/**/*').pipe(gulp.dest('./dist/images'));
     gulp.src('./statics/**/*').pipe(gulp.dest('./dist/statics'));
+    gulp.src('./www/favicon.ico').pipe(gulp.dest('./dist'));
 
     gulp.src('www/index.html')
     .pipe(useref({
