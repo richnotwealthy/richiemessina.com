@@ -2,7 +2,7 @@
 @include fontFace('Raleway', '../fonts/Raleway-Regular', normal, normal);
 
 $lightGray: #676a6c;
-$particleRed: #e19494;
+$particleRed: #b84949;
 $white: #fff;
 
 body {
@@ -73,6 +73,10 @@ nav ul a:hover {
 
 .fill-height {
     height: 94%;
+}
+
+.material-icons.tiny {
+    font-size: 0.85rem;
 }
 
 #particles-js {

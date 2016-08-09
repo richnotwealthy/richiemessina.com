@@ -70,62 +70,74 @@ module.exports =
                {
                    img: "../images/terminal.png",
                    name: "Bash Terminal",
-                   grade: [,,,,,]
+                   grade: [,,,,,,,,,],
+                   remains: [,]
                },
                {
                    img: "../images/git.png",
                    name: "Git",
-                   grade: [,,,,,]
+                   grade: [,,,,,,,,,],
+                   remains: [,]
                },
                {
                    img: "../images/nodejs.png",
                    name: "Node.js",
-                   grade: [,,,,,]
+                   grade: [,,,,,,,,,],
+                   remains: [,]
                },
                {
                    img: "../images/jquery.png",
                    name: "jQuery",
-                   grade: [,,,,,]
+                   grade: [,,,,,,,,,],
+                   remains: [,]
                },
                {
                    img: "../images/elasticsearch.png",
                    name: "Elasticsearch",
-                   grade: [,,,,]
+                   grade: [,,,,,,,,],
+                   remains: [,,]
                },
                {
                    img: "../images/gulp.png",
                    name: "Gulp",
-                   grade: [,,,,]
+                   grade: [,,,,,,,,,],
+                   remains: [,]
                },
                {
                    img: "../images/express.png",
                    name: "Express",
-                   grade: [,,,,]
+                   grade: [,,,,,,,,],
+                   remains: [,,]
                },
                {
                    img: "../images/dust.png",
                    name: "Dust.js",
-                   grade: [,,,,]
+                   grade: [,,,,,,,,,],
+                   remains: [,]
                },
                {
                    img: "../images/bootstrap.png",
                    name: "Bootstrap",
-                   grade: [,,,,]
+                   grade: [,,,,,,,,,],
+                   remains: [,]
                },
                {
                    img: "../images/materialize.svg",
                    name: "Materialize",
-                   grade: [,,,,]
+                   grade: [,,,,,,,,,],
+                   remains: [,]
                },
                {
                    img: "../images/bower.png",
                    name: "Bower",
-                   grade: [,,,,]
+                   grade: [,,,,,,,,,],
+                   remains: [,]
                },
                {
                    img: "../images/docker.png",
                    name: "Docker",
-                   grade: [,,,,]
+                   grade: [,,,,,,,,],
+                   remains: [,,]
                }
            ]
        },
@@ -135,37 +147,44 @@ module.exports =
                {
                    img: "../images/javascript.jpeg",
                    name: "JavaScript",
-                   grade: [,,,,,]
+                   grade: [,,,,,,,,,],
+                   remains: [,]
                },
                {
                    img: "../images/python.png",
                    name: "Python",
-                   grade: [,,,,,]
+                   grade: [,,,,,,,,,],
+                   remains: [,]
                },
                {
                    img: "../images/cplusplus.png",
                    name: "C++",
-                   grade: [,,,,,]
+                   grade: [,,,,,,,,,],
+                   remains: [,]
                },
                {
                    img: "../images/html.png",
                    name: "HTML",
-                   grade: [,,,,]
+                   grade: [,,,,,,,,],
+                   remains: [,,]
                },
                {
                    img: "../images/css.png",
                    name: "CSS",
-                   grade: [,,,,]
+                   grade: [,,,,,,,,],
+                   remains: [,,]
                },
                {
                    img: "../images/sass.png",
                    name: "Sass",
-                   grade: [,,,,]
+                   grade: [,,,,,,,,],
+                   remains: [,,]
                },
                {
                    img: "../images/java.png",
                    name: "Java",
-                   grade: [,,,]
+                   grade: [,,,,,],
+                   remains: [,,,,,]
                }
            ]
        },
@@ -175,17 +194,20 @@ module.exports =
                {
                    img: "../images/msoffice.png",
                    name: "Microsoft Office",
-                   grade: [,,,,,]
+                   grade: [,,,,,,,,,],
+                   remains: [,]
                },
                {
                    img: "../images/gdrive.png",
                    name: "Google Drive",
-                   grade: [,,,,,]
+                   grade: [,,,,,,,,,],
+                   remains: [,]
                },
                {
                    img: "../images/social.png",
                    name: "Social Media",
-                   grade: [,,,,,]
+                   grade: [,,,,,,,,,],
+                   remains: [,]
                }
            ]
        }
