@@ -1,3 +1,5 @@
+function grade(n){ return { filled: Array(n), empty: Array(10-n) }; }
+
 module.exports =
 {
    title: 'About',
@@ -41,7 +43,9 @@ module.exports =
                "Developed cross-platform desktop application which provides smart parsing of " +
                "spreadsheets for geocoding addresses to latitude/longitude locations. " +
                "Packaged with electron using web technologies."
-           ]
+           ],
+           company: "SITO Mobile",
+           dates: "June 2016 - Present"
        },
        {
            title: "Media Support Technician",
@@ -50,7 +54,9 @@ module.exports =
                "Audio and visual staging assistant",
                "Provide customer support for video and still photographic lighting and composition.",
                "Troubleshoot signal and control flow errors present in audio and visual systems."
-           ]
+           ],
+           company: "NYU",
+           dates: "Feb 2016 - Present"
        },
        {
            title: "Inventory Management Associate",
@@ -60,7 +66,9 @@ module.exports =
                "Organize orders for textbooks.",
                "Ensure the proper number of books are purchased for each classroom and student.",
                "Distribute textbooks to students."
-           ]
+           ],
+           company: "St. Peter's Prep",
+           dates: "2013 - 2015"
        }
    ],
    quals: [
@@ -70,74 +78,62 @@ module.exports =
                {
                    img: "../images/terminal.png",
                    name: "Bash Terminal",
-                   grade: [,,,,,,,,,],
-                   remains: [,]
+                   grade: grade(9)
                },
                {
                    img: "../images/git.png",
                    name: "Git",
-                   grade: [,,,,,,,,,],
-                   remains: [,]
+                   grade: grade(9)
                },
                {
                    img: "../images/nodejs.png",
                    name: "Node.js",
-                   grade: [,,,,,,,,,],
-                   remains: [,]
+                   grade: grade(9)
                },
                {
                    img: "../images/jquery.png",
                    name: "jQuery",
-                   grade: [,,,,,,,,,],
-                   remains: [,]
+                   grade: grade(9)
                },
                {
                    img: "../images/elasticsearch.png",
                    name: "Elasticsearch",
-                   grade: [,,,,,,,,],
-                   remains: [,,]
+                   grade: grade(7)
                },
                {
                    img: "../images/gulp.png",
                    name: "Gulp",
-                   grade: [,,,,,,,,,],
-                   remains: [,]
+                   grade: grade(8)
                },
                {
                    img: "../images/express.png",
                    name: "Express",
-                   grade: [,,,,,,,,],
-                   remains: [,,]
+                   grade: grade(8)
                },
                {
                    img: "../images/dust.png",
                    name: "Dust.js",
-                   grade: [,,,,,,,,,],
-                   remains: [,]
+                   grade: grade(9)
                },
                {
                    img: "../images/bootstrap.png",
                    name: "Bootstrap",
-                   grade: [,,,,,,,,,],
-                   remains: [,]
+                   grade: grade(8)
                },
                {
                    img: "../images/materialize.svg",
                    name: "Materialize",
-                   grade: [,,,,,,,,,],
-                   remains: [,]
+                   grade: grade(9)
                },
                {
                    img: "../images/bower.png",
                    name: "Bower",
-                   grade: [,,,,,,,,,],
-                   remains: [,]
+                   grade: grade(9)
                },
                {
                    img: "../images/docker.png",
                    name: "Docker",
-                   grade: [,,,,,,,,],
-                   remains: [,,]
+                   grade: grade(7)
                }
            ]
        },
@@ -147,44 +143,37 @@ module.exports =
                {
                    img: "../images/javascript.jpeg",
                    name: "JavaScript",
-                   grade: [,,,,,,,,,],
-                   remains: [,]
+                   grade: grade(9)
                },
                {
                    img: "../images/python.png",
                    name: "Python",
-                   grade: [,,,,,,,,,],
-                   remains: [,]
+                   grade: grade(9)
                },
                {
                    img: "../images/cplusplus.png",
                    name: "C++",
-                   grade: [,,,,,,,,,],
-                   remains: [,]
+                   grade: grade(9)
                },
                {
                    img: "../images/html.png",
                    name: "HTML",
-                   grade: [,,,,,,,,],
-                   remains: [,,]
+                   grade: grade(8)
                },
                {
                    img: "../images/css.png",
                    name: "CSS",
-                   grade: [,,,,,,,,],
-                   remains: [,,]
+                   grade: grade(7)
                },
                {
                    img: "../images/sass.png",
                    name: "Sass",
-                   grade: [,,,,,,,,],
-                   remains: [,,]
+                   grade: grade(7)
                },
                {
                    img: "../images/java.png",
                    name: "Java",
-                   grade: [,,,,,],
-                   remains: [,,,,,]
+                   grade: grade(5)
                }
            ]
        },
@@ -194,20 +183,17 @@ module.exports =
                {
                    img: "../images/msoffice.png",
                    name: "Microsoft Office",
-                   grade: [,,,,,,,,,],
-                   remains: [,]
+                   grade: grade(9)
                },
                {
                    img: "../images/gdrive.png",
                    name: "Google Drive",
-                   grade: [,,,,,,,,,],
-                   remains: [,]
+                   grade: grade(9)
                },
                {
                    img: "../images/social.png",
                    name: "Social Media",
-                   grade: [,,,,,,,,,],
-                   remains: [,]
+                   grade: grade(9)
                }
            ]
        }

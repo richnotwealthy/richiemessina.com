@@ -3,6 +3,7 @@
 
 $lightGray: #676a6c;
 $particleRed: #b84949;
+$focusRed: #d26565;
 $white: #fff;
 
 body {
@@ -25,16 +26,22 @@ nav {
     transition: all 0.5s ease;
 }
 
-nav ul a,
-nav a,
-#logo-container {
-    padding: 0 15px;
-    background-color: $particleRed;
-    color: $white;
+nav {
+    & ul a,
+    & a,
+    & .brand-logo {
+        padding: 0 15px;
+        background-color: $particleRed;
+        color: $white;
+    }
 }
 
-nav ul a:hover {
-    background-color: $particleRed;
+nav ul a, nav .brand-logo {
+    &:hover,
+    &:active {
+        background-color: $particleRed;
+        color: $white;
+    }
 }
 
 .waves-effect {
@@ -43,7 +50,7 @@ nav ul a:hover {
 
 .side-nav a {
     color: $white;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .particle-red {
@@ -63,20 +70,41 @@ nav ul a:hover {
     padding: 20px 0;
 }
 
-.flex-box {
-    display: flex;
-}
-
-.flex {
-    flex: 1;
-}
-
-.fill-height {
-    height: 94%;
-}
-
 .material-icons.tiny {
     font-size: 0.85rem;
+}
+
+.collection.with-header .collection-item.some-padding-left {
+    padding-left: 10px;
+}
+
+.btn {
+    &:hover,
+    &:focus {
+        background-color: $focusRed;
+    }
+}
+
+// FORM STUFF
+/* label color */
+.input-field label {
+    color: $lightGray;
+}
+/* label focus color */
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field textarea.materialize-textarea:focus {
+    & + label {
+        color: $focusRed;
+    },
+    & {
+        border-bottom: 1px solid $focusRed;
+        box-shadow: 0 1px 0 0 $focusRed;
+    }
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: $focusRed;
 }
 
 #particles-js {

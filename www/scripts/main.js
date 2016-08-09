@@ -8,15 +8,16 @@ var aboutConfig = require('../config/about.js');
 var projectsTempl = Q.denodeify(require('../views/projects-template.js')(dust));
 var projectsConfig = require('../config/projects.js');
 
+var connectTempl = Q.denodeify(require('../views/connect-template.js')(dust));
+var connectConfig = require('../config/connect.js');
+
 function loadAbout(){
-    $('#main-view').empty();
     aboutTempl(aboutConfig).then(function(about){
        $('#main-view').append($(about));
     });
 }
 
 function loadProjects(){
-    $('#main-view').empty();
     projectsTempl(projectsConfig).then(function(projects){
         $('#main-view').append($(projects));
     });
@@ -26,15 +27,17 @@ function loadResume(){
     window.open('/statics/richiemessina-resume.pdf');
 }
 
-function loadContact(){
-    $('#main-view').empty();
+function loadConnect(){
+    connectTempl(connectConfig).then(function(connect){
+        $('#main-view').append($(connect));
+    });
 }
 
 var views = {
     about: loadAbout,
     projects: loadProjects,
     resume: loadResume,
-    contact: loadContact
+    connect: loadConnect
 }
 
 $(document).ready(function(){
@@ -46,9 +49,11 @@ $(document).ready(function(){
 
     $(window).scroll(function(){
         if($(this).scrollTop() > 30){
-            $('nav').removeClass('transparent').addClass('particle-red');
+            $('nav').removeClass('transparent')
+                    .addClass('particle-red');
         } else {
-            $('nav').addClass('transparent').removeClass('particle-red');
+            $('nav').addClass('transparent')
+                    .removeClass('particle-red');
         }
     })
 
@@ -56,6 +61,8 @@ $(document).ready(function(){
     loadAbout();
 
     $('nav ul a').click(function(){
-        views[$(this).attr('page')]();
+        var page = $(this).attr('page');
+        if(page != 'resume') $('#main-view').empty();
+        views[page]();
     });
 });
