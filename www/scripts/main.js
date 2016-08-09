@@ -27,9 +27,33 @@ function loadResume(){
     window.open('/statics/richiemessina-resume.pdf');
 }
 
+function postToGSheets(data){
+    $.ajax({
+        url: '/formsubmit',
+        data: JSON.stringify(data),
+        type: 'POST',
+        contentType: 'application/json'
+    })
+    .done(function(res){
+        if(res == 200){
+
+        }
+    });
+}
+
 function loadConnect(){
     connectTempl(connectConfig).then(function(connect){
-        $('#main-view').append($(connect));
+        $('#main-view').append($(connect))
+            .find('[name=submit-msg]')
+                .click(function(e){
+                    var data = {};
+                    $('[msg-field]').each(function(i, field){
+                        var _field = $(field);
+                        var name = _field.attr('msg-field');
+                        data[name] = _field.val();
+                    });
+                    postToGSheets(data);
+                });
     });
 }
 

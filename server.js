@@ -1,14 +1,21 @@
 const express = require('express');
 const path = require('path');
 const logger = require('morgan');
+const bodyParser = require('body-parser');
 
 var app = express();
 var router = express.Router();
 
 app.use(logger('dev'));
+app.use(bodyParser.json());
 
 router.get('/', function(req, res){
     res.sendFile('index.html');
+});
+
+router.post('/formsubmit', function(req, res){
+    console.log(req.body);
+    res.json(req.body);
 });
 
 if(app.get('env') === 'development'){
