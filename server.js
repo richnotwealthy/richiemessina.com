@@ -10,10 +10,6 @@ var router = express.Router();
 app.use(logger('dev'));
 app.use(bodyParser.json());
 
-router.get('/', function(req, res) {
-    res.sendFile('index.html');
-});
-
 router.post('/formsubmit', function(req, res) {
     var form = req.body;
     console.log('submitting form:\n', form);

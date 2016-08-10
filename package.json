@@ -6,10 +6,13 @@
     "deploy": "gulp clean && gulp bld && gcloud app deploy --project portfolio-site-1470603805071"
   },
   "dependencies": {
+    "body-parser": "^1.15.2",
     "dustjs-linkedin": "^2.7.3",
     "express": "^4.14.0",
     "morgan": "^1.7.0",
-    "q": "^1.4.1"
+    "path": "^0.12.7",
+    "q": "^1.4.1",
+    "request": "^2.74.0"
   },
   "devDependencies": {
     "bower": "^1.7.9",
