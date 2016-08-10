@@ -1,7 +1,10 @@
 module.exports =
 {
     title: 'Connect',
-    body: 'the form below populates a Google Sheets form and notifies me via email',
+    body: [
+        'the form below populates a spreadsheet on my Google Drive',
+        'when you send a message, I\'ll be notified via email'
+    ],
     socials: [
         {
             img: '../images/gmail.png',

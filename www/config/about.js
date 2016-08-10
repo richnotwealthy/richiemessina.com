@@ -88,7 +88,7 @@ module.exports =
                {
                    img: "../images/nodejs.png",
                    name: "Node.js",
-                   grade: grade(9)
+                   grade: grade(8)
                },
                {
                    img: "../images/jquery.png",
@@ -108,12 +108,12 @@ module.exports =
                {
                    img: "../images/express.png",
                    name: "Express",
-                   grade: grade(8)
+                   grade: grade(7)
                },
                {
                    img: "../images/dust.png",
                    name: "Dust.js",
-                   grade: grade(9)
+                   grade: grade(8)
                },
                {
                    img: "../images/bootstrap.png",
