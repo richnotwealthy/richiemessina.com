@@ -30,9 +30,9 @@ router.post('/formsubmit', function(req, res) {
 });
 
 if(app.get('env') === 'development') {
-    app.use(express.static(path.join(__dirname)));
-    app.use(express.static(path.join(__dirname+'/.tmp')));
-    app.use(express.static(path.join(__dirname+'/www')));
+    app.use(express.static(__dirname));
+    app.use(express.static(path.join(__dirname, '/.tmp')));
+    app.use(express.static(path.join(__dirname, '/www')));
     app.set('port', 3333);
 } else {
     app.use(express.static(path.join(__dirname, 'dist')));

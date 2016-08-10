@@ -5,12 +5,11 @@ module.exports =
         'the form below populates a spreadsheet on my Google Drive',
         'when you send a message, I\'ll be notified via email'
     ],
+    email: {
+        img: '../images/gmail.png',
+        text: 'messina.rd@gmail.com'
+    },
     socials: [
-        {
-            img: '../images/gmail.png',
-            link: 'mailto:messina.rd@gmail.com',
-            text: 'messina.rd@gmail.com'
-        },
         {
             img: '../images/linkedin.png',
             link: 'https://www.linkedin.com/in/messinard',

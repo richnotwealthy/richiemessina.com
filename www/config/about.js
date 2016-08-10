@@ -86,29 +86,19 @@ module.exports =
                    grade: grade(9)
                },
                {
-                   img: "../images/nodejs.png",
-                   name: "Node.js",
-                   grade: grade(8)
-               },
-               {
                    img: "../images/jquery.png",
                    name: "jQuery",
                    grade: grade(9)
                },
                {
-                   img: "../images/elasticsearch.png",
-                   name: "Elasticsearch",
-                   grade: grade(7)
+                   img: "../images/nodejs.png",
+                   name: "Node.js",
+                   grade: grade(8)
                },
                {
                    img: "../images/gulp.png",
                    name: "Gulp",
                    grade: grade(8)
-               },
-               {
-                   img: "../images/express.png",
-                   name: "Express",
-                   grade: grade(7)
                },
                {
                    img: "../images/dust.png",
@@ -123,12 +113,22 @@ module.exports =
                {
                    img: "../images/materialize.svg",
                    name: "Materialize",
-                   grade: grade(9)
+                   grade: grade(8)
                },
                {
                    img: "../images/bower.png",
                    name: "Bower",
-                   grade: grade(9)
+                   grade: grade(8)
+               },
+               {
+                   img: "../images/elasticsearch.png",
+                   name: "Elasticsearch",
+                   grade: grade(7)
+               },
+               {
+                   img: "../images/express.png",
+                   name: "Express",
+                   grade: grade(7)
                },
                {
                    img: "../images/docker.png",

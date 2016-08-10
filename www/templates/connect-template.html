@@ -36,9 +36,13 @@
         <div class="col s12 m4">
             <ul class="card collection with-header no-padding">
                 <li class="collection-header"><h4>Other</h4></li>
+                <li class="collection-item row some-padding-left valign-wrapper">
+                    <img class="responsive-img valign col s3" src={email.img}>
+                    <p class="valign col s9 responsive-text">{email.text}</p>
+                </li>
                 {#socials}
                 <li class="collection-item row some-padding-left">
-                    <a class="valign-wrapper" href={link} target="_blank">
+                    <a class="valign-wrapper gold-link" href={link} target="_blank">
                         <img class="responsive-img valign col s3" src={img}>
                         <p class="valign col s9 responsive-text">{text}</p>
                     </a>

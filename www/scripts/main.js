@@ -37,7 +37,7 @@ function postToGSheets(data) {
     .done(function(res) {
         if(res == 'OK') {
             Materialize.toast('message sent successfully', 5000);
-            $('[msg-field]').val('');
+            $('[msg-field]').val('').trigger('autoresize');
             Materialize.updateTextFields();
         } else {
             Materialize.toast('message failed to send', 5000);
@@ -74,16 +74,6 @@ $(document).ready(function() {
         closeOnClick: true
     });
     particlesJS.load('particles-js', 'statics/particles.json');
-
-    $(window).scroll(function() {
-        if($(this).scrollTop() > 30) {
-            $('nav').removeClass('transparent')
-                    .addClass('particle-red');
-        } else {
-            $('nav').addClass('transparent')
-                    .removeClass('particle-red');
-        }
-    })
 
     // load default page
     loadAbout();

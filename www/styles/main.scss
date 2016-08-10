@@ -19,27 +19,26 @@ section {
 }
 
 nav {
-    box-shadow: none;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
-nav {
     & ul a,
     & a,
     & .brand-logo {
         padding: 0 15px;
         background-color: $particleRed;
         color: $white;
+        box-shadow: 0 2px 5px -5px rgba(0, 0, 0, 0.16), 0 2px 10px -10px rgba(0, 0, 0, 0.12);
+    },
+    {
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
     }
 }
 
 nav ul a, nav .brand-logo {
     &:hover,
     &:active {
-        background-color: $particleRed;
+        background-color: $focusRed;
         color: $white;
     }
 }
@@ -99,14 +98,14 @@ nav ul a, nav .brand-logo {
     color: $lightGray;
 }
 
-/* label focus color */
+/* focus color */
 .input-field input[type=text]:focus,
 .input-field input[type=email]:focus,
 .input-field textarea.materialize-textarea:focus {
     & + label {
         color: $focusRed;
     },
-    & {
+    {
         border-bottom: 1px solid $focusRed;
         box-shadow: 0 1px 0 0 $focusRed;
     }
@@ -115,6 +114,16 @@ nav ul a, nav .brand-logo {
 /* icon prefix focus color */
 .input-field .prefix.active {
     color: $focusRed;
+}
+
+.gold-link {
+    &:hover {
+        color: #ffd8a6;
+    },
+    {
+        color: #ffab40;
+        transition: color .3s ease;
+    }
 }
 
 #particles-js {
