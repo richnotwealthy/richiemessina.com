@@ -112,12 +112,6 @@ nav ul a, nav .brand-logo {
     }
 }
 
-/* invalid color */
-.input-field input[type=email].invalid {
-  border-bottom: 1px solid #ffb000;
-  box-shadow: 0 1px 0 0 #ffb000;
-}
-
 /* icon prefix focus color */
 .input-field .prefix.active {
     color: $focusRed;

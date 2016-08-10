@@ -38,6 +38,7 @@ function postToGSheets(data) {
         if(res == 'OK') {
             Materialize.toast('message sent successfully', 5000);
             $('[msg-field]').val('');
+            Materialize.updateTextFields();
         } else {
             Materialize.toast('message failed to send', 5000);
         }
