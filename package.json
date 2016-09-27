@@ -2,8 +2,8 @@
   "name": "richiemessina.com",
   "description": "my portfolio site",
   "scripts": {
-    "postinstall": "node_modules/.bin/bower install",
-    "start": "node_modules/.bin/gulp bld && node server.js"
+    "postinstall": "bower install && gulp bld",
+    "start": "node server.js"
   },
   "dependencies": {
     "body-parser": "^1.15.2",
