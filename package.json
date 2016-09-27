@@ -2,7 +2,7 @@
   "name": "richiemessina.com",
   "description": "my portfolio site",
   "scripts": {
-    "start": "gulp prod"
+    "start": "node_modules/.bin/gulp prod"
   },
   "dependencies": {
     "body-parser": "^1.15.2",
