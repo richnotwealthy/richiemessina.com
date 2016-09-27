@@ -6,7 +6,7 @@ module.exports =
    me: '../images/me.png',
    body: "Hi there! Welcome to my portfolio site. This web page functions as a Node.js application " +
    "generating responsive pages in real-time using the Dust.js templating engine. It is hosted " +
-   "on Google's App Engine with Express handling the server-side routing. The entire workflow " +
+   "on Heroku with Express handling the server-side routing. The entire workflow " +
    "of building this site was automated through Gulp and the styling was completely transpiled by Sass.",
    infos: [
        {
