@@ -2,8 +2,7 @@
   "name": "richiemessina.com",
   "description": "my portfolio site",
   "scripts": {
-    "start": "node server.js",
-    "deploy": "gulp clean && gulp bld && gcloud app deploy --project portfolio-site-1470603805071"
+    "start": "node server.js"
   },
   "dependencies": {
     "body-parser": "^1.15.2",
