@@ -6,7 +6,7 @@ module.exports =
    me: '../images/me.png',
    body: "Hi there! Welcome to my portfolio site. This web page functions as a Node.js application " +
    "generating responsive pages in real-time using the Dust.js templating engine. It is hosted " +
-   "on Google's App Engine with Express handling the server-side routing. The entire workflow " +
+   "on Heroku with Express handling the server-side routing. The entire workflow " +
    "of building this site was automated through Gulp and the styling was completely transpiled by Sass.",
    infos: [
        {
@@ -39,10 +39,12 @@ module.exports =
            img: "../images/sito-o.png",
            bullets: [
                "Worked within the front and back -ends of a web app which provides an interface for " +
-               "querying elasticsearch indexes of businesses/bid impressions and visualizing the data.",
+               "querying Elasticsearch indices of businesses/bid impressions and visualizing the data.",
                "Developed cross-platform desktop application which provides smart parsing of " +
                "spreadsheets for geocoding addresses to latitude/longitude locations. " +
-               "Packaged with electron using web technologies."
+               "Packaged with Electron using web technologies such as HTML, CSS, and JS.",
+               "Built multiple CLIs with Python and Node.js for analyzing several Elasticsearch indices " +
+               "to dynamically generate new sets of data."
            ],
            company: "SITO Mobile",
            dates: "June 2016 - Present"
@@ -134,6 +136,11 @@ module.exports =
                    img: "../images/docker.png",
                    name: "Docker",
                    grade: grade(7)
+               },
+               {
+                   img: "../images/rethinkdb.png",
+                   name: "RethinkDB",
+                   grade: grade(5)
                }
            ]
        },
@@ -193,6 +200,11 @@ module.exports =
                {
                    img: "../images/social.png",
                    name: "Social Media",
+                   grade: grade(9)
+               },
+               {
+                   img: "../images/customerservice.png",
+                   name: "Customer Service",
                    grade: grade(9)
                }
            ]
