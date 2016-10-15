@@ -38,8 +38,12 @@ module.exports =
            title: "Techonology Development Intern",
            img: "../images/sito-o.png",
            bullets: [
-               "Worked within the front and back -ends of a web app which provides an interface for " +
-               "querying Elasticsearch indices of businesses/bid impressions and visualizing the data.",
+               "Worked within the front and back -ends of a robust Node application built to intelligently " +
+               "and interactively visualize terabytes of business and bid request data. The app follows a " +
+               "general MVC pattern with some aspects of MVVM. It is constructed mostly of HTML, " +
+               "CSS, JavaScript, Dust.js, and Sass on the front-end with Express.js running a proxy to " +
+               "Elasticsearch and RethinkDB on the back-end. Much of the visualization is done through D3.js, " +
+               "the Google Maps JavaScript API, and DataTables.",
                "Developed cross-platform desktop application which provides smart parsing of " +
                "spreadsheets for geocoding addresses to latitude/longitude locations. " +
                "Packaged with Electron using web technologies such as HTML, CSS, and JS.",
@@ -53,7 +57,7 @@ module.exports =
            title: "Media Support Technician",
            img: "../images/nyu-torch.png",
            bullets: [
-               "Audio and visual staging assistant",
+               "Audio and visual staging assistant.",
                "Provide customer support for video and still photographic lighting and composition.",
                "Troubleshoot signal and control flow errors present in audio and visual systems."
            ],
@@ -123,6 +127,11 @@ module.exports =
                    grade: grade(8)
                },
                {
+                   img: "../images/electron.png",
+                   name: "Electron",
+                   grade: grade(8)
+               },
+               {
                    img: "../images/elasticsearch.png",
                    name: "Elasticsearch",
                    grade: grade(7)
@@ -135,12 +144,17 @@ module.exports =
                {
                    img: "../images/docker.png",
                    name: "Docker",
-                   grade: grade(7)
+                   grade: grade(6)
                },
                {
                    img: "../images/rethinkdb.png",
                    name: "RethinkDB",
-                   grade: grade(5)
+                   grade: grade(6)
+               },
+               {
+                   img: "../images/d3.png",
+                   name: "D3.js",
+                   grade: grade(6)
                }
            ]
        },
@@ -206,6 +220,11 @@ module.exports =
                    img: "../images/customerservice.png",
                    name: "Customer Service",
                    grade: grade(9)
+               },
+               {
+                   img: "../images/GIS.png",
+                   name: "Geographic Information System",
+                   grade: grade(7)
                }
            ]
        }
