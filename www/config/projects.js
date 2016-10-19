@@ -53,6 +53,20 @@ module.exports =
             description: "The homepage of Michael J. Messina, Attorney at Law. Built with HTML, CSS, and JS, this website functions as a basic Node.js " +
             "application hosted on Heroku with Express.js handling the routing and static file serving. The page was designed with Sketch by my freelance partner, " +
             "Connor Lin, and developed by me. Communication between designer and developer was done both in person and through Zeplin."
+        },
+        {
+            title: "Data Hoops",
+            image: "../images/datahoops.png",
+            right: true,
+            actions: [
+                {
+                    text: "Github",
+                    link: "https://github.com/rivyx/data-hoops"
+                }
+            ],
+            description: "A simple visualization tool with an overcomplicated project architecture for creating NBA shot charts. I made this to practice some React, Redux, and D3.js over the " +
+            "course of a weekend. I also learned a bit about Webpack and React Router along the way. The data source is being accessed through the stats.nba.com " +
+            "API, which has no official documentation. Use of it was possible through web scraping that was accomplished with Python."
         }
     ]
 };

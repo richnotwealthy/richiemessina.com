@@ -155,6 +155,16 @@ module.exports =
                    img: "../images/d3.png",
                    name: "D3.js",
                    grade: grade(6)
+               },
+               {
+                   img: "../images/react.png",
+                   name: "React",
+                   grade: grade(5)
+               },
+               {
+                   img: "../images/redux.png",
+                   name: "Redux",
+                   grade: grade(5)
                }
            ]
        },
