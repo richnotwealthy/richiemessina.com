@@ -78,7 +78,7 @@ $(document).ready(function() {
     // load default page
     loadAbout();
 
-    $('nav ul a').click(function() {
+    $('nav a').click(function() {
         var page = $(this).attr('page');
         if(page != 'resume') $('#main-view').empty();
         views[page]();
