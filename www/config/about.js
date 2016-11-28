@@ -94,7 +94,7 @@ module.exports =
                {
                    img: "../images/jquery.png",
                    name: "jQuery",
-                   grade: grade(9)
+                   grade: grade(8)
                },
                {
                    img: "../images/nodejs.png",
@@ -159,23 +159,18 @@ module.exports =
                {
                    img: "../images/react.png",
                    name: "React",
-                   grade: grade(5)
+                   grade: grade(4)
                },
                {
                    img: "../images/redux.png",
                    name: "Redux",
-                   grade: grade(5)
+                   grade: grade(4)
                }
            ]
        },
        {
            header: "Languages",
            items: [
-               {
-                   img: "../images/javascript.jpeg",
-                   name: "JavaScript",
-                   grade: grade(9)
-               },
                {
                    img: "../images/python.png",
                    name: "Python",
@@ -187,6 +182,11 @@ module.exports =
                    grade: grade(9)
                },
                {
+                   img: "../images/javascript.jpeg",
+                   name: "JavaScript",
+                   grade: grade(8)
+               },
+               {
                    img: "../images/html.png",
                    name: "HTML",
                    grade: grade(8)
@@ -194,7 +194,7 @@ module.exports =
                {
                    img: "../images/css.png",
                    name: "CSS",
-                   grade: grade(7)
+                   grade: grade(8)
                },
                {
                    img: "../images/sass.png",
@@ -232,9 +232,19 @@ module.exports =
                    grade: grade(9)
                },
                {
+                   img: "../images/web-dev.png",
+                   name: "Web Development",
+                   grade: grade(8)
+               },
+               {
                    img: "../images/GIS.png",
                    name: "Geographic Information System",
                    grade: grade(7)
+               },
+               {
+                   img: "../images/android.jpg",
+                   name: "Android Development",
+                   grade: grade(5)
                }
            ]
        }
