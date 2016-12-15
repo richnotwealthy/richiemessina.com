@@ -19,6 +19,37 @@ module.exports =
             "of building this site was automated through Gulp and the styling was completely transpiled by Sass."
         },
         {
+            title: "SITO Mobile Planner",
+            image: "../images/media-planner.png",
+            right: true,
+            actions: [
+                {
+                    text: "SITO Mobile",
+                    link: "http://sitomobile.com/"
+                }
+            ],
+            description: "A robust Node application built to intelligently " +
+            "and interactively visualize terabytes of business and bid request data. The app follows a " +
+            "general MVC pattern with some aspects of MVVM. It is constructed mostly of HTML, " +
+            "CSS, JavaScript, Dust.js, and Sass on the front-end with Express.js running a proxy to " +
+            "Elasticsearch and RethinkDB on the back-end. Much of the visualization is done through D3.js, " +
+            "the Google Maps JavaScript API, and DataTables."
+        },
+        {
+            title: "SITO Mobile Geocoder",
+            image: "../images/geocoder.png",
+            right: false,
+            actions: [
+                {
+                    text: "SITO Mobile",
+                    link: "http://sitomobile.com/"
+                }
+            ],
+            description: "A cross-platform desktop application which provides smart parsing of " +
+            "spreadsheets for geocoding addresses to latitude/longitude locations. " +
+            "Packaged with Electron using web technologies such as HTML, CSS, and JS."
+        },
+        {
             title: "Prepdroid",
             image: "../images/prepdroid.png",
             right: true,
