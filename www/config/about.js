@@ -35,7 +35,7 @@ module.exports =
    ],
    jobs: [
        {
-           title: "Techonology Development Intern",
+           title: "Technology Development Intern",
            img: "../images/sito-o.png",
            bullets: [
                "Worked within the front and back -ends of a robust Node application built to intelligently " +
