@@ -122,14 +122,9 @@ module.exports =
                    grade: grade(8)
                },
                {
-                   img: "../images/bower.png",
-                   name: "Bower",
-                   grade: grade(8)
-               },
-               {
                    img: "../images/electron.png",
                    name: "Electron",
-                   grade: grade(8)
+                   grade: grade(7)
                },
                {
                    img: "../images/elasticsearch.png",
@@ -142,9 +137,14 @@ module.exports =
                    grade: grade(7)
                },
                {
-                   img: "../images/docker.png",
-                   name: "Docker",
-                   grade: grade(6)
+                   img: "../images/react.png",
+                   name: "React",
+                   grade: grade(7)
+               },
+               {
+                   img: "../images/redux.png",
+                   name: "Redux",
+                   grade: grade(7)
                },
                {
                    img: "../images/rethinkdb.png",
@@ -152,19 +152,14 @@ module.exports =
                    grade: grade(6)
                },
                {
-                   img: "../images/d3.png",
-                   name: "D3.js",
+                   img: "../images/docker.png",
+                   name: "Docker",
                    grade: grade(6)
                },
                {
-                   img: "../images/react.png",
-                   name: "React",
-                   grade: grade(4)
-               },
-               {
-                   img: "../images/redux.png",
-                   name: "Redux",
-                   grade: grade(4)
+                   img: "../images/d3.png",
+                   name: "D3.js",
+                   grade: grade(6)
                }
            ]
        },
