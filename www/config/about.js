@@ -38,6 +38,8 @@ module.exports =
            title: "Technology Development Intern",
            img: "../images/sito-o.png",
            bullets: [
+               "Co-leading the development of a tool for clients and administrators to communicate campaign orders. "+
+               "Built on the 3REE stack for real-time functionality with React and Redux on the front-end and RethinkDB and Express on the back-end.",
                "Worked within the front and back -ends of a robust Node application built to intelligently " +
                "and interactively visualize terabytes of business and bid request data. The app follows a " +
                "general MVC pattern with some aspects of MVVM. It is constructed mostly of HTML, " +
@@ -92,18 +94,33 @@ module.exports =
                    grade: grade(9)
                },
                {
-                   img: "../images/jquery.png",
-                   name: "jQuery",
-                   grade: grade(8)
-               },
-               {
                    img: "../images/nodejs.png",
                    name: "Node.js",
+                   grade: grade(9)
+               },
+               {
+                   img: "../images/react.png",
+                   name: "React",
                    grade: grade(8)
                },
                {
-                   img: "../images/gulp.png",
-                   name: "Gulp",
+                   img: "../images/redux.png",
+                   name: "Redux",
+                   grade: grade(8)
+               },
+               {
+                   img: "../images/rethinkdb.png",
+                   name: "RethinkDB",
+                   grade: grade(8)
+               },
+               {
+                   img: "../images/express.png",
+                   name: "Express",
+                   grade: grade(8)
+               },
+               {
+                   img: "../images/jquery.png",
+                   name: "jQuery",
                    grade: grade(8)
                },
                {
@@ -130,26 +147,6 @@ module.exports =
                    img: "../images/elasticsearch.png",
                    name: "Elasticsearch",
                    grade: grade(7)
-               },
-               {
-                   img: "../images/express.png",
-                   name: "Express",
-                   grade: grade(7)
-               },
-               {
-                   img: "../images/react.png",
-                   name: "React",
-                   grade: grade(7)
-               },
-               {
-                   img: "../images/redux.png",
-                   name: "Redux",
-                   grade: grade(7)
-               },
-               {
-                   img: "../images/rethinkdb.png",
-                   name: "RethinkDB",
-                   grade: grade(6)
                },
                {
                    img: "../images/docker.png",
@@ -179,7 +176,7 @@ module.exports =
                {
                    img: "../images/javascript.jpeg",
                    name: "JavaScript",
-                   grade: grade(8)
+                   grade: grade(9)
                },
                {
                    img: "../images/html.png",
@@ -201,7 +198,8 @@ module.exports =
                    name: "Java",
                    grade: grade(5)
                }
-           ]
+           ],
+           style: "margin-bottom: 5px;"
        },
        {
            header: "Miscellaneous",
@@ -249,7 +247,7 @@ module.exports =
            title: "New York University",
            dates: "2015 - 2019 (Present)",
            text: "I'm currently pursuing a BS in Computer Science at the NYU Tandon School of Engineering. " +
-           "So far, I've achieved Dean's List placement for the 2015 - 2016 academic year with a 3.99 GPA. " +
+           "So far, I've achieved Dean's List placement for the 2015 - 2016 academic year with a 4.0 GPA. " +
            "I've served as member of Hall Council, Design for America NYU, and the Entrepreneurship & Innovation Association.",
            img: "../images/nyu.jpg"
        },
