@@ -35,7 +35,7 @@ module.exports =
    ],
    jobs: [
        {
-           title: "Technology Development Intern",
+           title: "Platform Engineer",
            img: "../images/sito-o.png",
            bullets: [
                "Co-leading the development of a tool for clients and administrators to communicate campaign orders. "+
@@ -53,7 +53,8 @@ module.exports =
                "to dynamically generate new sets of data."
            ],
            company: "SITO Mobile",
-           dates: "June 2016 - Present"
+           dates: "January 2017 - Present",
+           former: "Technology Development Intern (June 2016 - January 2017)"
        },
        {
            title: "Media Support Technician",
