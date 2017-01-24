@@ -53,8 +53,8 @@ module.exports =
                "to dynamically generate new sets of data."
            ],
            company: "SITO Mobile",
-           dates: "January 2017 - Present",
-           former: "Technology Development Intern (June 2016 - January 2017)"
+           dates: "Jan 2017 - Present",
+           former: "Technology Development Intern (June 2016 - Jan 2017)"
        },
        {
            title: "Media Support Technician",
