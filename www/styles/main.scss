@@ -43,6 +43,13 @@ nav ul a, nav .brand-logo {
     }
 }
 
+ul {
+  &:not(.browser-default),
+  & li {
+    list-style-type: none;
+  }
+}
+
 .responsive-text {
     font-size: 1.3vw;
 }
