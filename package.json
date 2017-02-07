@@ -11,6 +11,7 @@
     "browserify": "^13.1.0",
     "del": "^2.2.1",
     "dustjs-linkedin": "^2.7.3",
+    "email": "^0.2.6",
     "express": "^4.14.0",
     "globby": "^6.0.0",
     "gulp": "^3.9.1",

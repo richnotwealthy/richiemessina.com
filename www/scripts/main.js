@@ -1,15 +1,16 @@
-var Q = require('q');
+const Q = require('q');
+
 var dust = require('dustjs-linkedin');
-dust.config.cache = false
+dust.config.cache = false;
 
-var aboutTempl = Q.denodeify(require('../views/about-template.js')(dust));
-var aboutConfig = require('../config/about.js');
+const aboutTempl = Q.denodeify(require('../views/about-template.js')(dust));
+const aboutConfig = require('../config/about.js');
 
-var projectsTempl = Q.denodeify(require('../views/projects-template.js')(dust));
-var projectsConfig = require('../config/projects.js');
+const projectsTempl = Q.denodeify(require('../views/projects-template.js')(dust));
+const projectsConfig = require('../config/projects.js');
 
-var connectTempl = Q.denodeify(require('../views/connect-template.js')(dust));
-var connectConfig = require('../config/connect.js');
+const connectTempl = Q.denodeify(require('../views/connect-template.js')(dust));
+const connectConfig = require('../config/connect.js');
 
 function loadAbout() {
   aboutTempl(aboutConfig).then(function(about) {
@@ -27,41 +28,37 @@ function loadResume() {
   window.open('https://drive.google.com/open?id=0B3Z3gUqqHxY4SXAzMGFGeWR2UnM');
 }
 
-function postToGSheets(data) {
-  $.ajax({
-      url: '/formsubmit',
-      data: JSON.stringify(data),
-      type: 'POST',
-      contentType: 'application/json'
-    })
-    .done(function(res) {
-      if (res == 'OK') {
-        Materialize.toast('message sent successfully', 5000);
-        $('[msg-field]').val('').trigger('autoresize');
-        Materialize.updateTextFields();
-      } else {
-        Materialize.toast('message failed to send', 5000);
-      }
-    });
-}
-
 function loadConnect() {
   connectTempl(connectConfig).then(function(connect) {
-    $('#main-view').append($(connect))
-      .find('[name=submit-msg]')
-      .click(function(e) {
-        var data = {};
-        $('[msg-field]').each(function(i, field) {
-          var _field = $(field);
-          var name = _field.attr('msg-field');
-          data[name] = _field.val();
-        });
-        postToGSheets(data);
-      });
+    $('#main-view').append($(connect));
+
+    // initialize google maps
+    const options = {
+      zoom: 11,
+      center: new google.maps.LatLng(40.6919139, -73.98462740000002),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+
+    const map = new google.maps.Map(document.getElementById('gmap_canvas'), options);
+
+    const marker = new google.maps.Marker({
+      map: map,
+      position: new google.maps.LatLng(40.6919139, -73.98462740000002)
+    });
+
+    const infowindow = new google.maps.InfoWindow({
+      content: '<strong>Richie Messina</strong><br>100 Willoughby St<br>11201 Brooklyn<br>'
+    });
+
+    google.maps.event.addListener(marker, 'click', function() {
+      infowindow.open(map, marker);
+    });
+
+    infowindow.open(map, marker);
   });
 }
 
-var views = {
+const views = {
   about: loadAbout,
   projects: loadProjects,
   resume: loadResume,

@@ -11,7 +11,7 @@ module.exports = {
       }],
       description: "The site you're using right now! It functions as a Node.js application " +
         "generating responsive pages in real-time using the Dust.js templating engine. It is hosted " +
-        "on Heroku with Express handling the server-side routing. The entire workflow " +
+        "on Netlify with Express handling the server-side routing. The entire workflow " +
         "of building this site was automated through Gulp and the styling was completely transpiled by Sass."
     },
     {

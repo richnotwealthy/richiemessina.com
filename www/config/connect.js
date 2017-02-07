@@ -1,8 +1,8 @@
 module.exports = {
   title: 'Connect',
   body: [
-    'the form below populates a spreadsheet on my Google Drive',
-    'when you send a message, I\'ll be notified via email'
+    'though originally from Clifton, NJ, I\'m currently living in Brooklyn, NY.',
+    'if you\'d like to send me message, you can reach me through any of the provided options'
   ],
   email: {
     img: '../images/gmail.png',

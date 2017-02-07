@@ -45,6 +45,17 @@ nav ul a {
     }
 }
 
+#gmap_canvas {
+  & img {
+    max-width: none !important;
+    background: none !important;
+  },
+  & {
+    height:600px;
+    width:100%;
+  }
+}
+
 .card-panel {
     padding: 20px !important;
 }
