@@ -8,9 +8,9 @@ function grade(n) {
 module.exports = {
   title: 'About',
   me: '../images/me.png',
-  body: "Hi there! Welcome to my portfolio site. This web page functions as a Node.js application " +
-    "generating responsive pages in real-time using the Dust.js templating engine. It is hosted " +
-    "on Netlify with Express handling the server-side routing. The entire workflow " +
+  body: "Hi there! Welcome to my portfolio site. This web page functions as a single page application " +
+    "generating responsive views in real-time using the Dust.js templating engine. It is hosted " +
+    "on Netlify and built on top of the MaterializeCSS framework. The entire workflow " +
     "of building this site was automated through Gulp and the styling was completely transpiled by Sass.",
   infos: [{
       icon: 'code',
