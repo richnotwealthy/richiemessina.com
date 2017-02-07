@@ -1,8 +1,8 @@
 module.exports = {
   title: 'Connect',
   body: [
-    'though originally from Clifton, NJ, I\'m currently living in Brooklyn, NY.',
-    'if you\'d like to send me message, you can reach me through any of the provided options'
+    'a New Jersey native, I\'m currently living in Brooklyn, NY.',
+    'if you\'d like to send me message, feel free'
   ],
   email: {
     img: '../images/gmail.png',
