@@ -42,21 +42,25 @@ module.exports = {
         "Packaged with Electron using web technologies such as HTML, CSS, and JS."
     },
     {
-      title: "Prepdroid",
-      image: "../images/prepdroid.png",
+      title: "For Hue",
+      image: "../images/for-hue-logo.png",
       right: true,
       actions: [{
-          text: "Play Store",
-          link: "https://play.google.com/store/apps/details?id=com.yolasite.rivyze.prepdroid"
+          text: "Demo",
+          link: "https://for-hue.herokuapp.com/"
         },
         {
           text: "Github",
-          link: "https://github.com/rivyx/prepdroid"
+          link: "https://github.com/rivyx/for-hue"
+        },
+        {
+          text: "Devpost",
+          link: "https://devpost.com/software/for-hue"
         }
       ],
-      description: "My first application, made to be used by students at St. Peter's Prep, Jersey City, NJ.\nI made this when " +
-        "I first got interested in programming. It was my very first personal project. I actually built the entire thing during " +
-        "finals week of my junior year in high school, 2014."
+      description: "Developed for HackNYU 2017, a web app which adjusts the colors of a pdf file for various types of colorblindness. Built with React on the front-end " +
+        "and Express with Sockets handling the color conversion through ImageMagick and JIMP on the back-end. Logo and design by my friends and teammates " +
+        "Daniel Jiang, <a href=\"http://ryanchin.co/\" class=\"blue-link\" target=\"_blank\">Ryan Chin</a>, and Pooja Patel."
     },
     {
       title: "michaelmessina.com",
@@ -65,15 +69,11 @@ module.exports = {
       actions: [{
           text: "Homepage",
           link: "http://www.michaelmessina.com/"
-        },
-        {
-          text: "Connor Lin",
-          link: "http://www.connormaxlin.com/"
         }
       ],
       description: "The homepage of Michael J. Messina, Attorney at Law. Built with HTML, CSS, and JS, this website functions as a basic Node.js " +
         "application hosted on Heroku with Express.js handling the routing and static file serving. The page was designed with Sketch by my freelance partner, " +
-        "Connor Lin, and developed by me. Communication between designer and developer was done both in person and through Zeplin."
+        "<a href=\"http://www.connormaxlin.com/\" class=\"blue-link\" target=\"_blank\">Connor Lin</a>, and developed by me. Communication between designer and developer was done both in person and through Zeplin."
     },
     {
       title: "Data Hoops",
@@ -86,6 +86,23 @@ module.exports = {
       description: "A simple visualization tool with an overcomplicated project architecture for creating NBA shot charts. I made this to practice some React, Redux, and D3.js over the " +
         "course of a weekend. I also learned a bit about Webpack and React Router along the way. The data source is being accessed through the stats.nba.com " +
         "API, which has no official documentation. Use of it was possible through web scraping that was accomplished with Python."
+    },
+    {
+      title: "Prepdroid",
+      image: "../images/prepdroid.png",
+      right: false,
+      actions: [{
+          text: "Play Store",
+          link: "https://play.google.com/store/apps/details?id=com.yolasite.rivyze.prepdroid"
+        },
+        {
+          text: "Github",
+          link: "https://github.com/rivyx/prepdroid"
+        }
+      ],
+      description: "My first application, made to be used by students at St. Peter's Prep, Jersey City, NJ.\nI made this when " +
+        "I first got interested in programming. It was my very first personal project. I actually built the entire thing during " +
+        "finals week of my junior year in high school, 2014."
     }
   ]
 };

@@ -147,6 +147,18 @@ nav ul a {
     }
 }
 
+.blue-link {
+    &:hover {
+        color: #8acefb;
+    }
+
+    ,
+     {
+        color: #50a5fe;
+        transition: color 0.3s ease;
+    }
+}
+
 #particles-js {
     height: 100% !important;
     width: 100% !important;
