@@ -103,6 +103,19 @@ module.exports = {
       description: "My first application, made to be used by students at St. Peter's Prep, Jersey City, NJ.\nI made this when " +
         "I first got interested in programming. It was my very first personal project. I actually built the entire thing during " +
         "finals week of my junior year in high school, 2014."
+    },
+    {
+      title: "EatEasy",
+      image: "../images/eateasy.png",
+      right: true,
+      actions: [{
+          text: "Github",
+          link: "https://github.com/snehaarkery/EatEasy"
+        }
+      ],
+      description: "React Native Andriod/iOS application built for my Software Entrepreneurship class at NYU. " +
+        "EatEasy works as a food shopping assistant allowing users to scan the barcode of a food product to " +
+        "check if the product is within his or her diet."
     }
   ]
 };

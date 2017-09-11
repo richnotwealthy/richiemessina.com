@@ -40,19 +40,15 @@ module.exports = {
       title: "Platform Engineer",
       img: "../images/sito-o.png",
       bullets: [
-        "Co-leading the development of a tool for clients and administrators to communicate campaign orders. " +
-        "Built on the 3REE stack for real-time functionality with React and Redux on the front-end and RethinkDB and Express on the back-end.",
-        "Worked within the front and back -ends of a robust Node application built to intelligently " +
-        "and interactively visualize terabytes of business and bid request data. The app follows a " +
-        "general MVC pattern with some aspects of MVVM. It is constructed mostly of HTML, " +
-        "CSS, JavaScript, Dust.js, and Sass on the front-end with Express.js running a proxy to " +
-        "Elasticsearch and RethinkDB on the back-end. Much of the visualization is done through D3.js, " +
-        "the Google Maps JavaScript API, and DataTables.",
+        "Co-leading the development of multiple web applications for analyzing and providing location insights. " +
+        "The primary stack used involves React and Redux on the front-end and RethinkDB and Elasticsearch on the back-end " +
+        "with Node servers and proxies as middleware.",
         "Developed cross-platform desktop application which provides smart parsing of " +
         "spreadsheets for geocoding addresses to latitude/longitude locations. " +
         "Packaged with Electron using web technologies such as HTML, CSS, and JS.",
-        "Built multiple CLIs with Python and Node.js for analyzing several Elasticsearch indices " +
-        "to dynamically generate new sets of data."
+        "Built multiple CLIs and scripts with Python and Node.js for analyzing and building parts of the databases " +
+        "and dynamically generating and parsing immense amounts of location-based information.",
+        "Helped manage the responsibilties of engineering interns."
       ],
       company: "SITO Mobile",
       dates: "Jan 2017 - Present",
@@ -62,6 +58,7 @@ module.exports = {
       title: "Media Support Technician",
       img: "../images/nyu-torch.png",
       bullets: [
+        "Leading the development of a full stack web application for managing equipment.",
         "Audio and visual staging assistant.",
         "Provide customer support for video and still photographic lighting and composition.",
         "Troubleshoot signal and control flow errors present in audio and visual systems."
@@ -120,8 +117,8 @@ module.exports = {
           grade: grade(8)
         },
         {
-          img: "../images/jquery.png",
-          name: "jQuery",
+          img: "../images/couchdb.png",
+          name: "CouchDB",
           grade: grade(8)
         },
         {
@@ -130,14 +127,14 @@ module.exports = {
           grade: grade(8)
         },
         {
-          img: "../images/bootstrap.png",
-          name: "Bootstrap",
+          img: "../images/antd.png",
+          name: "Ant Design",
           grade: grade(8)
         },
         {
-          img: "../images/materialize.svg",
-          name: "Materialize",
-          grade: grade(8)
+          img: "../images/reactnative.png",
+          name: "React Native",
+          grade: grade(7)
         },
         {
           img: "../images/electron.png",
@@ -169,14 +166,14 @@ module.exports = {
           grade: grade(9)
         },
         {
-          img: "../images/cplusplus.png",
-          name: "C++",
-          grade: grade(9)
-        },
-        {
           img: "../images/javascript.jpeg",
           name: "JavaScript",
           grade: grade(9)
+        },
+        {
+          img: "../images/cplusplus.png",
+          name: "C/C++",
+          grade: grade(8)
         },
         {
           img: "../images/html.png",
@@ -219,9 +216,9 @@ module.exports = {
           grade: grade(9)
         },
         {
-          img: "../images/customerservice.png",
-          name: "Customer Service",
-          grade: grade(9)
+          img: "../images/datavis.png",
+          name: "Data Visualization",
+          grade: grade(8)
         },
         {
           img: "../images/web-dev.png",
@@ -236,7 +233,7 @@ module.exports = {
         {
           img: "../images/android.jpg",
           name: "Android Development",
-          grade: grade(5)
+          grade: grade(6)
         }
       ]
     }
@@ -245,8 +242,8 @@ module.exports = {
       title: "New York University",
       dates: "2015 - 2019 (Present)",
       text: "I'm currently pursuing a BS in Computer Science at the NYU Tandon School of Engineering. " +
-        "So far, I've achieved Dean's List placement for the 2015 - 2016 academic year with a 4.0 GPA. " +
-        "I've served as member of Hall Council, Design for America NYU, and the Entrepreneurship & Innovation Association.",
+        "So far, I've achieved Dean's List placement for both my freshman and sophomore academic years with a 3.9 GPA. " +
+        "I've served as member of Hall Council, Design for America NYU, Tech@NYU and the Entrepreneurship & Innovation Association.",
       img: "../images/nyu.jpg"
     },
     {
