@@ -48,7 +48,7 @@ module.exports = {
         "Packaged with Electron using web technologies such as HTML, CSS, and JS.",
         "Built multiple CLIs and scripts with Python and Node.js for analyzing and building parts of the databases " +
         "and dynamically generating and parsing immense amounts of location-based information.",
-        "Helped manage the responsibilties of engineering interns."
+        "Helped manage the responsibilities of engineering interns."
       ],
       company: "SITO Mobile",
       dates: "Jan 2017 - Present",
@@ -117,11 +117,6 @@ module.exports = {
           grade: grade(8)
         },
         {
-          img: "../images/couchdb.png",
-          name: "CouchDB",
-          grade: grade(8)
-        },
-        {
           img: "../images/dust.png",
           name: "Dust.js",
           grade: grade(8)
@@ -139,6 +134,11 @@ module.exports = {
         {
           img: "../images/electron.png",
           name: "Electron",
+          grade: grade(7)
+        },
+        {
+          img: "../images/couchdb.png",
+          name: "CouchDB",
           grade: grade(7)
         },
         {
