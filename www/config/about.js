@@ -122,11 +122,6 @@ module.exports = {
           grade: grade(8)
         },
         {
-          img: "../images/antd.png",
-          name: "Ant Design",
-          grade: grade(8)
-        },
-        {
           img: "../images/reactnative.png",
           name: "React Native",
           grade: grade(7)
@@ -154,6 +149,16 @@ module.exports = {
         {
           img: "../images/d3.png",
           name: "D3.js",
+          grade: grade(6)
+	    },
+		{
+          img: "../images/postgresql.png",
+          name: "PostgreSQL",
+          grade: grade(6)
+	    },
+		{
+          img: "../images/mysql.jpg",
+          name: "MySQL",
           grade: grade(6)
         }
       ]
@@ -194,7 +199,12 @@ module.exports = {
           img: "../images/java.png",
           name: "Java",
           grade: grade(5)
-        }
+		},
+		{
+		img: "../images/sql.png",
+		name: "SQL",
+		grade: grade(5)
+		}
       ],
       style: "margin-bottom: 5px;"
     },
