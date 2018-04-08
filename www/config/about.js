@@ -17,30 +17,39 @@ module.exports = {
       label: 'Developer',
       text: "Deeply passionate about modern software, I simply love " +
         "developing programs and applications with expansive utility and attractive architecture. " +
-        "I am constantly building out personal projects and am always excited to pick up new work."
+        "I am constantly building out interesting projects and am always excited to pick up new work."
     },
     {
       icon: 'class',
       label: 'Student',
-      text: "I am currently an undergraduate student pursuing my BS in Computer Science & " +
-        "Engineering at New York University. I consider myself not only a student in the classroom " +
+      text: "I consider myself not only a student in the classroom " +
         "but also in practice. For me, the most essential component of programming is the readiness " +
         "and ability to learn and adapt to new technologies and outside perspectives."
     },
     {
       icon: 'lightbulb_outline',
       label: 'Enthusiast',
-      text: "Even when I'm not building out applications, I spend much of my time reading online " +
-        "tech magazines and developer blogs. On top of this passion for development, " +
-        "I am also immensely interested in hip-hop and basketball culture. When I'm not buried inside " +
-        "of a program, you can probably find me out on the basketball courts bumping to some Kanye."
+      text: "On top of my passion for computer science, " +
+        "I am also immensely interested in music and basketball culture. When I'm not buried inside " +
+        "of a program, you can usually find me exploring my guitar or playing some pick-up basketball."
     }
   ],
   jobs: [{
+      title: "Software Development Engineering Intern",
+      img: "../images/amazon.jpg",
+      bullets: [
+        "Worked within the Hardware Engineering Analysis Lab at AWS writing software tools to automate " +
+        "cloud and infrastructure testing.",
+        "Implemented graph algorithms for generating smart, interactive test workflows."
+      ],
+      company: "Amazon",
+      dates: "Feb 2018 - Apr 2018"
+    },
+    {
       title: "Platform Engineer",
       img: "../images/sito-o.png",
       bullets: [
-        "Co-leading the development of multiple web applications for analyzing and providing location insights. " +
+        "Co-lead the development of multiple web applications for analyzing and providing location insights. " +
         "The primary stack used involves React and Redux on the front-end and RethinkDB and Elasticsearch on the back-end " +
         "with Node servers and proxies as middleware.",
         "Developed cross-platform desktop application which provides smart parsing of " +
@@ -48,10 +57,10 @@ module.exports = {
         "Packaged with Electron using web technologies such as HTML, CSS, and JS.",
         "Built multiple CLIs and scripts with Python and Node.js for analyzing and building parts of the databases " +
         "and dynamically generating and parsing immense amounts of location-based information.",
-        "Helped manage the responsibilities of engineering interns."
+        "Helped manage the responsibilities of technology interns."
       ],
       company: "SITO Mobile",
-      dates: "Jan 2017 - Present",
+      dates: "Jan 2017 - Jan 2018",
       former: "Technology Development Intern (June 2016 - Jan 2017)"
     },
     {
@@ -83,7 +92,7 @@ module.exports = {
       header: "Technologies",
       items: [{
           img: "../images/terminal.png",
-          name: "Bash Terminal",
+          name: "Zsh, Vim, Tmux",
           grade: grade(9)
         },
         {
@@ -150,16 +159,21 @@ module.exports = {
           img: "../images/d3.png",
           name: "D3.js",
           grade: grade(6)
-	    },
-		{
+        },
+        {
           img: "../images/postgresql.png",
           name: "PostgreSQL",
           grade: grade(6)
-	    },
-		{
+        },
+        {
           img: "../images/mysql.jpg",
           name: "MySQL",
           grade: grade(6)
+        },
+        {
+        img: "../images/rails.png",
+        name: "Rails",
+        grade: grade(5)
         }
       ]
     },
@@ -196,21 +210,31 @@ module.exports = {
           grade: grade(7)
         },
         {
+        img: "../images/sql.png",
+        name: "SQL",
+        grade: grade(7)
+        },
+        {
+        img: "../images/ruby.png",
+        name: "Ruby",
+        grade: grade(6)
+        },
+        {
           img: "../images/java.png",
           name: "Java",
-          grade: grade(5)
-		},
-		{
-		img: "../images/sql.png",
-		name: "SQL",
-		grade: grade(5)
-		}
+          grade: grade(4)
+        }
       ],
       style: "margin-bottom: 5px;"
     },
     {
       header: "Miscellaneous",
       items: [{
+          img: "../images/web-dev.png",
+          name: "Fullstack Application Development",
+          grade: grade(9)
+        },
+        {
           img: "../images/msoffice.png",
           name: "Microsoft Office",
           grade: grade(9)
@@ -221,18 +245,8 @@ module.exports = {
           grade: grade(9)
         },
         {
-          img: "../images/social.png",
-          name: "Social Media",
-          grade: grade(9)
-        },
-        {
           img: "../images/datavis.png",
           name: "Data Visualization",
-          grade: grade(8)
-        },
-        {
-          img: "../images/web-dev.png",
-          name: "Web Development",
           grade: grade(8)
         },
         {
@@ -241,9 +255,14 @@ module.exports = {
           grade: grade(7)
         },
         {
+          img: "../images/aws.png",
+          name: "Amazon Web Services",
+          grade: grade(6)
+        },
+        {
           img: "../images/android.jpg",
           name: "Android Development",
-          grade: grade(6)
+          grade: grade(5)
         }
       ]
     }

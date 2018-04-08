@@ -2,8 +2,11 @@
   "name": "richiemessina.com",
   "description": "my portfolio site",
   "scripts": {
-    "postinstall": "bower install && gulp bld",
-    "start": "node server.js"
+    "postinstall": "npm run bower && npm run build",
+    "start": "node server.js",
+    "bower": "bower install",
+    "build": "gulp bld",
+    "dev": "gulp develop"
   },
   "dependencies": {
     "body-parser": "^1.15.2",
