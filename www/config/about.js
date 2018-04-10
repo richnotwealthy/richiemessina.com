@@ -231,7 +231,7 @@ module.exports = {
       header: "Skills",
       items: [{
           img: "../images/web-dev.png",
-          name: "Fullstack Application Development",
+          name: "Full Stack Development",
           grade: grade(9)
         },
         {
