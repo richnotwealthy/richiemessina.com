@@ -228,7 +228,7 @@ module.exports = {
       style: "margin-bottom: 5px;"
     },
     {
-      header: "Miscellaneous",
+      header: "Skills",
       items: [{
           img: "../images/web-dev.png",
           name: "Fullstack Application Development",
