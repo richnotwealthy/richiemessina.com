@@ -38,8 +38,9 @@ module.exports = {
       title: "Software Development Engineering Intern",
       img: "../images/amazon.jpg",
       bullets: [
-        "Worked within the Hardware Engineering Analysis Lab at AWS writing software tools to automate " +
-        "cloud and infrastructure testing.",
+        "Worked within the Hardware Engineering Automation Lab at AWS writing software tools to manage, " +
+        "schedule, and execute tests of Amazon and manufacturer-related " +
+        "cloud and infrastructure hardware.",
         "Implemented graph algorithms for generating smart, interactive test workflows."
       ],
       company: "Amazon",
