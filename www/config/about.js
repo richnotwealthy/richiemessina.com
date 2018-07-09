@@ -35,6 +35,15 @@ module.exports = {
     }
   ],
   jobs: [{
+      title: "Software Engineer Intern",
+      img: "../images/fb.png",
+      bullets: [
+        "Currently working within the Recruiting Products team."
+      ],
+      company: "Facebook",
+      dates: "Jun 2018 - Aug 2018"
+    },
+    {
       title: "Software Development Engineering Intern",
       img: "../images/amazon.jpg",
       bullets: [

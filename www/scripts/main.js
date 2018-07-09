@@ -75,9 +75,10 @@ $(document).ready(function() {
   // load default page
   loadAbout();
 
-  $('nav a').click(function() {
+  $('.nav-click a').click(function() {
     var page = $(this).attr('page');
-    if (page != 'resume') $('#main-view').empty();
+    if (!page) return;
+    else if (page != 'resume') $('#main-view').empty();
     views[page]();
   });
 });
