@@ -38,7 +38,10 @@ module.exports = {
       title: "Software Engineer Intern",
       img: "../images/fb.png",
       bullets: [
-        "Currently working within the Recruiting Products team."
+        "Worked within Recruiting Products developing and architecting a new system for automating " +
+        "interview scheduling.",
+        "Led team of cross-functional peers to a successful public product launch.",
+        "Contributed to quality and reliability of infrastructure across the org."
       ],
       company: "Facebook",
       dates: "Jun 2018 - Aug 2018"
@@ -59,7 +62,7 @@ module.exports = {
       title: "Platform Engineer",
       img: "../images/sito-o.png",
       bullets: [
-        "Co-lead the development of multiple web applications for analyzing and providing location insights. " +
+        "Co-led the development of multiple web applications for analyzing and providing location insights based on advertising data. " +
         "The primary stack used involves React and Redux on the front-end and RethinkDB and Elasticsearch on the back-end " +
         "with Node servers and proxies as middleware.",
         "Developed cross-platform desktop application which provides smart parsing of " +
