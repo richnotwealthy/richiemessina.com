@@ -35,6 +35,15 @@ module.exports = {
     }
   ],
   jobs: [{
+      title: "Software Engineering Intern",
+      img: "../images/peloton.jpg",
+      bullets: [
+        "Currently working within the Infrastructure Team."
+      ],
+      company: "Peloton Interactive",
+      dates: "Oct 2018 - Present"
+    },
+    {
       title: "Software Engineer Intern",
       img: "../images/fb.png",
       bullets: [

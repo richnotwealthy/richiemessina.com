@@ -15,8 +15,8 @@ module.exports = {
     },
     {
       img: '../images/github.png',
-      link: 'https://github.com/rivyx',
-      text: 'rivyx'
+      link: 'https://github.com/riemes',
+      text: 'riemes'
     },
     {
       img: '../images/instagram.png',
