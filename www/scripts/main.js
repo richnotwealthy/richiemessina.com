@@ -13,72 +13,69 @@ const connectTempl = Q.denodeify(require('../views/connect-template.js')(dust));
 const connectConfig = require('../config/connect.js');
 
 function loadAbout() {
-  aboutTempl(aboutConfig).then(function(about) {
-    $('#main-view').append($(about));
-  });
+	aboutTempl(aboutConfig).then(function(about) {
+		$('#main-view').append($(about));
+	});
 }
 
 function loadProjects() {
-  projectsTempl(projectsConfig).then(function(projects) {
-    $('#main-view').append($(projects));
-  });
+	projectsTempl(projectsConfig).then(function(projects) {
+		$('#main-view').append($(projects));
+	});
 }
 
 function loadResume() {
-  window.open('https://drive.google.com/open?id=0B3Z3gUqqHxY4SXAzMGFGeWR2UnM');
+	window.open('https://drive.google.com/open?id=0B3Z3gUqqHxY4SXAzMGFGeWR2UnM');
 }
 
 function loadConnect() {
-  connectTempl(connectConfig).then(function(connect) {
-    $('#main-view').append($(connect));
+	connectTempl(connectConfig).then(function(connect) {
+		$('#main-view').append($(connect));
 
-    // initialize google maps
-    const options = {
-      zoom: 11,
-      center: new google.maps.LatLng(40.707769, -73.954348),
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
+		// initialize google maps
+		const options = {
+			zoom: 11,
+			center: new google.maps.LatLng(40.707769, -73.954348),
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
 
-    const map = new google.maps.Map(document.getElementById('gmap_canvas'), options);
+		const map = new google.maps.Map(document.getElementById('gmap_canvas'), options);
 
-    const marker = new google.maps.Marker({
-      map: map,
-      position: new google.maps.LatLng(40.707769, -73.954348)
-    });
+		const marker = new google.maps.Marker({
+			map: map,
+			position: new google.maps.LatLng(40.707769, -73.954348)
+		});
 
-    const infowindow = new google.maps.InfoWindow({
-      content: '<strong>Richie Messina</strong><br>374 S 5th St<br>Brooklyn 11211<br>'
-    });
+		const infowindow = new google.maps.InfoWindow({content: '<strong>Richie Messina</strong><br>374 S 5th St<br>Brooklyn 11211<br>'});
 
-    google.maps.event.addListener(marker, 'click', function() {
-      infowindow.open(map, marker);
-    });
+		google.maps.event.addListener(marker, 'click', function() {
+			infowindow.open(map, marker);
+		});
 
-    infowindow.open(map, marker);
-  });
+		infowindow.open(map, marker);
+	});
 }
 
 const views = {
-  about: loadAbout,
-  projects: loadProjects,
-  resume: loadResume,
-  connect: loadConnect
+	about: loadAbout,
+	projects: loadProjects,
+	resume: loadResume,
+	connect: loadConnect
 }
 
 $(document).ready(function() {
-  $('.button-collapse').sideNav({
-    menuWidth: 300,
-    closeOnClick: true
-  });
-  particlesJS.load('particles-js', 'statics/particles.json');
+	$('.button-collapse').sideNav({menuWidth: 300, closeOnClick: true});
+	particlesJS.load('particles-js', 'statics/particles.json');
 
-  // load default page
-  loadAbout();
+	// load default page
+	loadAbout();
 
-  $('.nav-click a').click(function() {
-    var page = $(this).attr('page');
-    if (!page) return;
-    else if (page != 'resume') $('#main-view').empty();
-    views[page]();
-  });
+	$('.nav-click a').click(function() {
+		var page = $(this).attr('page');
+		if (!page)
+			return;
+		else if (page != 'resume')
+			$('#main-view').empty();
+		views[page]();
+	});
 });
