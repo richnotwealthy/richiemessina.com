@@ -7,7 +7,7 @@ function grade(n) {
 
 module.exports = {
   title: 'About',
-  me: '../images/me.png',
+  me: '../images/me_london.jpg',
   body: "Hi there! Welcome to my portfolio site. This web page functions as a single page application " +
     "generating responsive views in real-time using the Dust.js templating engine. It is hosted " +
     "on Netlify and built on top of the MaterializeCSS framework. The entire workflow " +
@@ -35,13 +35,26 @@ module.exports = {
     }
   ],
   jobs: [{
+      title: "Software Engineer",
+      img: "../images/fb_new.png",
+      bullets: [
+        "Solving infrastructure and data engineering problems for FBC.",
+        "<a href=\"https://connectivity.fb.com/analytics/\" class=\"blue-link\" target=\"_blank\">connectivity.fb.com/analytics</a>"
+      ],
+      company: "Facebook",
+      dates: "Sep 2019 - Present"
+    },
+    {
       title: "Software Engineering Intern",
       img: "../images/peloton.jpg",
       bullets: [
-        "Currently working within the Infrastructure Team."
+        "Worked on multiple projects across infrastructure and data engineering.",
+        "Led the integration of SSO with internal employee accounts for the CRM platform.",
+        "Implemented ETL pipelines for hardware testing data on AWS Glue.",
+        "Heavily involved in automation of GDPR compliance infrastructure & tools.",
       ],
       company: "Peloton Interactive",
-      dates: "Oct 2018 - Present"
+      dates: "Oct 2018 - May 2019"
     },
     {
       title: "Software Engineer Intern",
@@ -95,7 +108,7 @@ module.exports = {
         "Troubleshoot signal and control flow errors present in audio and visual systems."
       ],
       company: "NYU",
-      dates: "Feb 2016 - Present"
+      dates: "Feb 2016 - Jan 2019"
     },
     {
       title: "Inventory Management Associate",
@@ -291,10 +304,10 @@ module.exports = {
   ],
   schools: [{
       title: "New York University",
-      dates: "2015 - 2019 (Present)",
-      text: "I'm currently pursuing a BS in Computer Science at the NYU Tandon School of Engineering. " +
-        "So far, I've achieved Dean's List placement for both my freshman and sophomore academic years with a 3.9 GPA. " +
-        "I've served as member of Hall Council, Design for America NYU, Tech@NYU and the Entrepreneurship & Innovation Association.",
+      dates: "2015 - 2019",
+      text: "I completed my BS in Computer Science at the NYU Tandon School of Engineering " +
+        "graduating Summa Cum Laude with a 3.878 GPA. " +
+        "Throughout my 4 years, I served as member of Hall Council, Design for America NYU, Tech@NYU and the Entrepreneurship & Innovation Association.",
       img: "../images/nyu.jpg"
     },
     {

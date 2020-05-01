@@ -1,6 +1,6 @@
 module.exports = {
   title: "Projects",
-  body: "anything and everything that I've worked on (and can show)",
+  body: "a few projects that I've worked on in the past (and can show)!",
   cards: [{
       title: "richiemessina.com",
       image: "../images/rdm.png",

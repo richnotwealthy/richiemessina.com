@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Connect',
   body: [
-    'a New Jersey native, I\'m currently living in Brooklyn, NY.',
+    'a New Jersey native, I\'m currently living in San Francisco, CA.',
     'if you\'d like to send me message, feel free'
   ],
   email: {

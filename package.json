@@ -9,27 +9,27 @@
     "dev": "gulp develop"
   },
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "bower": "^1.8.4",
-    "browserify": "^16.2.3",
+    "body-parser": "^1.19.0",
+    "bower": "^1.8.8",
+    "browserify": "^16.5.1",
     "del": "^3.0.0",
     "dustjs-linkedin": "^2.7.3",
     "email": "^0.2.6",
-    "express": "^4.16.3",
-    "globby": "^8.0.1",
-    "gulp": "^4.0.0",
+    "express": "^4.17.1",
+    "globby": "^8.0.2",
+    "gulp": "^4.0.2",
     "gulp-dust": "^5.0.0",
-    "gulp-nodemon": "^2.1.0",
+    "gulp-nodemon": "^2.5.0",
     "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.4",
+    "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify-es": "^1.0.4",
     "gulp-useref": "^3.1.5",
     "gulp-util": "^3.0.8",
-    "morgan": "^1.9.0",
+    "morgan": "^1.10.0",
     "path": "^0.12.7",
     "q": "^1.5.1",
-    "request": "^2.87.0",
-    "through2": "^3.0.0",
+    "request": "^2.88.2",
+    "through2": "^3.0.1",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   },
@@ -46,5 +46,8 @@
   "license": "ISC",
   "engines": {
     "node": "~4.2"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.1.3"
   }
 }

@@ -32,10 +32,13 @@ function loadConnect() {
 	connectTempl(connectConfig).then(function(connect) {
 		$('#main-view').append($(connect));
 
+		const lat = 37.7749;
+		const lng = -122.4194;
+
 		// initialize google maps
 		const options = {
-			zoom: 11,
-			center: new google.maps.LatLng(40.707769, -73.954348),
+			zoom: 10,
+			center: new google.maps.LatLng(lat, lng),
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 		};
 
@@ -43,10 +46,10 @@ function loadConnect() {
 
 		const marker = new google.maps.Marker({
 			map: map,
-			position: new google.maps.LatLng(40.707769, -73.954348)
+			position: new google.maps.LatLng(lat, lng)
 		});
 
-		const infowindow = new google.maps.InfoWindow({content: '<strong>Richie Messina</strong><br>374 S 5th St<br>Brooklyn 11211<br>'});
+		const infowindow = new google.maps.InfoWindow({content: '<strong>Richie Messina</strong><br>San Francisco, CA'});
 
 		google.maps.event.addListener(marker, 'click', function() {
 			infowindow.open(map, marker);
