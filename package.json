@@ -15,7 +15,7 @@
     "del": "^3.0.0",
     "dustjs-linkedin": "^2.7.3",
     "email": "^0.2.6",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "globby": "^8.0.2",
     "gulp": "^4.0.2",
     "gulp-dust": "^5.0.0",
